@@ -41,7 +41,10 @@ export function Navbar() {
             >
               Iniciar sesión
             </Button>
-            <Button className="text-sm md:text-base bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+            <Button 
+              className="text-sm md:text-base bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20probar%20Nexus', '_blank')}
+            >
               Probar Nexus
             </Button>
           </div>

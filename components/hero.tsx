@@ -51,6 +51,7 @@ export function Hero() {
               <Button
                 size="lg"
                 className="group w-full sm:w-auto hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
+                onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20comenzar%20con%20Nexus', '_blank')}
               >
                 Comenzar ahora
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -59,6 +60,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto bg-transparent hover:bg-primary/5 transition-all duration-300 hover:scale-105"
+                onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20gustaría%20ver%20una%20demo%20de%20Nexus', '_blank')}
               >
                 Ver demo
               </Button>

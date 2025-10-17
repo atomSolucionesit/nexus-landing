@@ -1,7 +1,10 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function CTA() {
+
   return (
     <section className="relative overflow-hidden bg-primary py-20 lg:py-32">
       {/* Background decoration */}
@@ -20,7 +23,12 @@ export function CTA() {
             días, sin tarjeta de crédito.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" variant="secondary" className="group w-full sm:w-auto">
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="group w-full sm:w-auto"
+              onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20probar%20Nexus%20gratis%20por%2014%20días', '_blank')}
+            >
               Prueba gratis 14 días
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
@@ -28,6 +36,7 @@ export function CTA() {
               size="lg"
               variant="outline"
               className="w-full border-primary-foreground/20 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 sm:w-auto"
+              onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20gustaría%20agendar%20una%20demo%20de%20Nexus', '_blank')}
             >
               Agendar demo
             </Button>

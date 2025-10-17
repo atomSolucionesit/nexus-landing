@@ -1,5 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react"
+"use client"
+
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 
 const plans = [
   {
@@ -44,7 +46,7 @@ const plans = [
     ],
     highlighted: false,
   },
-]
+];
 
 export function Pricing() {
   return (
@@ -55,7 +57,8 @@ export function Pricing() {
             Planes diseñados para tu negocio
           </h2>
           <p className="text-pretty text-lg text-muted-foreground">
-            Elige el plan que mejor se adapte a tus necesidades. Todos incluyen actualizaciones gratuitas.
+            Elige el plan que mejor se adapte a tus necesidades. Todos incluyen
+            actualizaciones gratuitas.
           </p>
         </div>
 
@@ -76,14 +79,22 @@ export function Pricing() {
               )}
 
               <div className="mb-6">
-                <h3 className="mb-2 text-2xl font-bold text-foreground">{plan.name}</h3>
-                <p className="text-sm text-muted-foreground">{plan.description}</p>
+                <h3 className="mb-2 text-2xl font-bold text-foreground">
+                  {plan.name}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {plan.description}
+                </p>
               </div>
 
               <div className="mb-6">
                 <div className="flex items-baseline">
-                  <span className="text-4xl font-bold text-foreground">{plan.price}</span>
-                  {plan.price !== "Contactar" && <span className="ml-2 text-muted-foreground">/mes</span>}
+                  <span className="text-4xl font-bold text-foreground">
+                    {plan.price}
+                  </span>
+                  {plan.price !== "Contactar" && (
+                    <span className="ml-2 text-muted-foreground">/mes</span>
+                  )}
                 </div>
               </div>
 
@@ -91,13 +102,28 @@ export function Pricing() {
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-3">
                     <Check className="h-5 w-5 shrink-0 text-primary" />
-                    <span className="text-sm text-muted-foreground">{feature}</span>
+                    <span className="text-sm text-muted-foreground">
+                      {feature}
+                    </span>
                   </li>
                 ))}
               </ul>
 
-              <Button className="w-full" variant={plan.highlighted ? "default" : "outline"} size="lg">
-                {plan.price === "Contactar" ? "Contactar ventas" : "Comenzar ahora"}
+              <Button
+                className="w-full"
+                variant={plan.highlighted ? "default" : "outline"}
+                size="lg"
+                onClick={() => {
+                  if (plan.price === "Contactar") {
+                    window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20el%20plan%20Pro%20de%20Nexus.%20Me%20gustaría%20recibir%20más%20información', '_blank')
+                  } else {
+                    window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20comenzar%20con%20el%20plan%20' + plan.name + '%20de%20Nexus', '_blank')
+                  }
+                }}
+              >
+                {plan.price === "Contactar"
+                  ? "Contactar ventas"
+                  : "Comenzar ahora"}
               </Button>
             </div>
           ))}
@@ -105,10 +131,11 @@ export function Pricing() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Todos los precios en pesos chilenos. Sin costos ocultos ni tarifas de instalación.
+            Todos los precios en pesos argentinos. Sin costos ocultos ni tarifas
+            de instalación.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
