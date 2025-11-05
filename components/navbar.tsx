@@ -27,7 +27,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center gap-3 animate-fade-in">
-            <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform hover:scale-110 duration-300">
+            <div className="relative w-10 h-10 md:w-22 md:h-22 transition-transform hover:scale-110 duration-300">
               <Image
                 src="/images/logo-nexus.png"
                 alt="Nexus Logo"

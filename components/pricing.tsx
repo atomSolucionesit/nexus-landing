@@ -13,7 +13,6 @@ const plans = [
       "Gestión de inventario básica",
       "Reportes de ventas",
       "Soporte por email",
-      "1 usuario",
     ],
     highlighted: false,
   },
@@ -26,7 +25,6 @@ const plans = [
       "Tienda online completa",
       "Sincronización automática",
       "Reportes avanzados",
-      "Hasta 3 usuarios",
       "Soporte prioritario",
     ],
     highlighted: true,
@@ -40,7 +38,6 @@ const plans = [
       "Integración con WhatsApp",
       "Integración con Instagram",
       "Múltiples canales de venta",
-      "Usuarios ilimitados",
       "Soporte 24/7",
       "Capacitación personalizada",
     ],
@@ -58,7 +55,7 @@ export function Pricing() {
           </h2>
           <p className="text-pretty text-lg text-muted-foreground">
             Elige el plan que mejor se adapte a tus necesidades. Todos incluyen
-            actualizaciones gratuitas.
+            actualizaciones gratuitas y usuario ilimitados.
           </p>
         </div>
 

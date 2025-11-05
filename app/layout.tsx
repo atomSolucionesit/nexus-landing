@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: "Nexus Software - Gestión empresarial simplificada",
   description: "Created with Atom Soluciones",
   generator: "Atom Soluciones It",
+  icons: {
+    icon: "/images/logo-nexus.png",
+    apple: "/images/logo-nexus.png",
+  },
 };
 
 export default function RootLayout({

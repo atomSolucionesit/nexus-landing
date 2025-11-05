@@ -44,7 +44,7 @@ export function ProductShowcase() {
               Terminal POS profesional
             </h2>
             <p className="text-pretty text-lg text-muted-foreground">
-              Hardware diseñado para la velocidad y eficiencia de tu negocio. Procesa ventas en segundos con nuestra
+              Diseñado para la velocidad y eficiencia de tu negocio. Procesa ventas en segundos con nuestra
               interfaz intuitiva.
             </p>
           </div>
@@ -87,8 +87,8 @@ export function ProductShowcase() {
               Gestiona desde cualquier lugar
             </h2>
             <p className="text-pretty text-lg text-muted-foreground">
-              Aplicación móvil completa para iOS y Android. Controla tu inventario, ventas y reportes desde tu
-              smartphone.
+              Controla tu inventario, ventas y reportes desde tu
+              cualquier dispositivo.
             </p>
           </div>
 
