@@ -1,38 +1,38 @@
 "use client"
 
-import { ShoppingCart, Globe, MessageSquare, BarChart3, Lock, Zap } from "lucide-react"
+import { Package, ShoppingCart, Truck, Globe, BarChart3, Users } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 const features = [
   {
+    icon: Package,
+    title: "Gestión de stock",
+    description: "Control en tiempo real por depósito o sucursal.",
+  },
+  {
     icon: ShoppingCart,
-    title: "POS Inteligente",
-    description: "Sistema de punto de venta rápido y eficiente para gestionar tus ventas físicas con facilidad.",
+    title: "Ventas y punto de venta (POS)",
+    description: "Facturación rápida con soporte para impresoras fiscales y QR.",
+  },
+  {
+    icon: Truck,
+    title: "Compras y proveedores",
+    description: "Órdenes de compra, recepción y control de costos.",
   },
   {
     icon: Globe,
-    title: "Tienda Online",
-    description: "Crea tu tienda en línea y vende 24/7. Sincronización automática con tu inventario.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Integración Multicanal",
-    description: "Conecta WhatsApp, Instagram y más canales de mensajería para vender donde están tus clientes.",
+    title: "Integraciones",
+    description: "Conectá tu cuenta de Mercado Libre, WooCommerce o Shopify.",
   },
   {
     icon: BarChart3,
-    title: "Reportes en Tiempo Real",
-    description: "Analiza tus ventas, inventario y rendimiento con dashboards intuitivos y actualizados.",
+    title: "Reportes y analítica",
+    description: "Indicadores de ventas, márgenes y stock con reportes exportables.",
   },
   {
-    icon: Lock,
-    title: "Seguridad Garantizada",
-    description: "Tus datos protegidos con encriptación de nivel empresarial y backups automáticos.",
-  },
-  {
-    icon: Zap,
-    title: "Actualizaciones Automáticas",
-    description: "Siempre tendrás las últimas funcionalidades sin complicaciones ni costos adicionales.",
+    icon: Users,
+    title: "Usuarios y roles",
+    description: "Control de acceso para equipos, sucursales y franquicias.",
   },
 ]
 
@@ -69,10 +69,10 @@ export function Features() {
           className={`mx-auto max-w-2xl text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Todo lo que necesitas para crecer
+            Todo lo que tu negocio necesita
           </h2>
           <p className="text-pretty text-lg text-muted-foreground">
-            Nexus integra todas las herramientas esenciales para gestionar tu negocio de manera eficiente y profesional.
+            Módulos completos para gestionar cada aspecto de tu operación comercial desde una sola plataforma.
           </p>
         </div>
 

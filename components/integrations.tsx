@@ -1,29 +1,26 @@
-"use client"
+"use client";
 
-import { Link2, Zap, CheckCircle2 } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
+import { Link2, Zap, CheckCircle2 } from "lucide-react";
+import { availableMemory } from "process";
+import { useEffect, useRef, useState } from "react";
 
 const integrations = [
-  {
-    name: "Tienda Nube",
-    description: "Sincroniza tu inventario y ventas con tu tienda online automáticamente.",
-    category: "E-commerce",
-    color: "from-blue-500/20 to-cyan-500/20",
-    icon: "🛒",
-  },
   {
     name: "Mercado Pago",
     description: "Procesa pagos online y offline de forma segura y rápida.",
     category: "Pagos",
     color: "from-blue-400/20 to-blue-600/20",
     icon: "💳",
+    available: true,
   },
   {
     name: "Mercado Libre",
-    description: "Gestiona tus publicaciones y ventas directamente desde Nexus.",
+    description:
+      "Gestiona tus publicaciones y ventas directamente desde Nexus.",
     category: "Marketplace",
     color: "from-yellow-400/20 to-orange-500/20",
     icon: "📦",
+    available: true,
   },
   {
     name: "WhatsApp Business",
@@ -31,43 +28,57 @@ const integrations = [
     category: "Mensajería",
     color: "from-green-500/20 to-emerald-500/20",
     icon: "💬",
+    available: true,
   },
   {
-    name: "Instagram Shopping",
-    description: "Conecta tu tienda de Instagram y vende desde las redes sociales.",
+    name: "Tienda Nube",
+    description:
+      "Sincroniza tu inventario y ventas con tu tienda online automáticamente.",
+    category: "E-commerce",
+    color: "from-blue-500/20 to-cyan-500/20",
+    icon: "🛒",
+    available: false,
+  },
+  {
+    name: "Instagram",
+    description:
+      "Conecta tu tienda de Instagram y vende desde las redes sociales recibiendo los mensajes de tus clientes.",
     category: "Redes Sociales",
     color: "from-pink-500/20 to-purple-500/20",
     icon: "📸",
+    available: true,
   },
   {
-    name: "Facebook Shop",
-    description: "Integra tu catálogo de productos con Facebook Shop.",
+    name: "Facebook",
+    description:
+      "Integra tu mensajería con Facebook Messenger recibiendo los mensajes de tus clientes.",
     category: "Redes Sociales",
     color: "from-blue-500/20 to-indigo-600/20",
     icon: "👥",
+    available: true,
   },
-]
+];
 
 export function Integrations() {
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
+          setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
-    )
+      { threshold: 0.1 }
+    );
 
     if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+      observer.observe(sectionRef.current);
     }
 
-    return () => observer.disconnect()
-  }, [])
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section
@@ -94,8 +105,9 @@ export function Integrations() {
             Conecta con todas tus plataformas
           </h2>
           <p className="text-pretty text-lg text-muted-foreground">
-            Nexus se integra perfectamente con las principales plataformas de e-commerce,
-            pagos y redes sociales. Todo sincronizado en tiempo real, sin complicaciones.
+            Nexus se integra perfectamente con las principales plataformas de
+            e-commerce, pagos y redes sociales. Todo sincronizado en tiempo
+            real, sin complicaciones.
           </p>
         </div>
 
@@ -105,7 +117,9 @@ export function Integrations() {
             <div
               key={index}
               className={`group relative overflow-hidden rounded-xl border border-border bg-card/50 backdrop-blur-sm p-6 transition-all duration-700 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
@@ -138,14 +152,24 @@ export function Integrations() {
 
                 {/* Check icon */}
                 <div className="mt-4 flex items-center gap-2 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <CheckCircle2 className="h-4 w-4" />
-                  <span className="font-medium">Integración disponible</span>
+                  {integration.available ? (
+                    <CheckCircle2 className="h-4 w-4" />
+                  ) : (
+                    <Zap className="h-4 w-4" />
+                  )}
+                  <span className="font-medium">
+                    {integration.available
+                      ? "Integración disponible"
+                      : "Integración en curso"}
+                  </span>
                 </div>
               </div>
 
               {/* Glow effect */}
               <div className="absolute inset-0 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className={`absolute inset-0 bg-gradient-to-br ${integration.color} blur-xl`} />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${integration.color} blur-xl`}
+                />
               </div>
             </div>
           ))}
@@ -165,8 +189,9 @@ export function Integrations() {
               ¿Necesitas otra integración?
             </h3>
             <p className="mb-6 text-muted-foreground">
-              Estamos constantemente agregando nuevas integraciones. Si tu plataforma
-              no está en la lista, contáctanos y te ayudamos a conectarla.
+              Estamos constantemente agregando nuevas integraciones. Si tu
+              plataforma no está en la lista, contáctanos y te ayudamos a
+              conectarla.
             </p>
             <a
               href="https://wa.me/5491126678238?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20las%20integraciones%20de%20Nexus"
@@ -181,6 +206,5 @@ export function Integrations() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

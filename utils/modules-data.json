@@ -1,0 +1,256 @@
+{
+  "modules": [
+    {
+      "id": "stock",
+      "label": "Gestión de Stock",
+      "icon": "package",
+      "description": "Control completo de inventario en tiempo real",
+      "images": {
+        "desktop": "/images/modules/stock/desktop/dashboard.jpg",
+        "mobile": "/images/modules/stock/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "inventory",
+          "label": "Inventario",
+          "icon": "boxes",
+          "description": "Visualiza y gestiona todo tu inventario",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/inventory.jpg",
+            "mobile": "/images/modules/stock/mobile/inventory.jpg"
+          }
+        },
+        {
+          "id": "movements",
+          "label": "Movimientos",
+          "icon": "arrow-right-left",
+          "description": "Historial de entradas y salidas de stock",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/movements.jpg",
+            "mobile": "/images/modules/stock/mobile/movements.jpg"
+          }
+        },
+        {
+          "id": "alerts",
+          "label": "Alertas de Stock",
+          "icon": "alert-triangle",
+          "description": "Notificaciones de stock mínimo y máximo",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/alerts.jpg",
+            "mobile": "/images/modules/stock/mobile/alerts.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "label": "Ventas y POS",
+      "icon": "shopping-cart",
+      "description": "Sistema de punto de venta completo",
+      "images": {
+        "desktop": "/images/modules/sales/desktop/dashboard.jpg",
+        "mobile": "/images/modules/sales/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "pos",
+          "label": "Punto de Venta",
+          "icon": "credit-card",
+          "description": "Interfaz de venta rápida y eficiente",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/pos.jpg",
+            "mobile": "/images/modules/sales/mobile/pos.jpg"
+          }
+        },
+        {
+          "id": "invoicing",
+          "label": "Facturación",
+          "icon": "file-text",
+          "description": "Genera facturas y comprobantes fiscales",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/invoicing.jpg",
+            "mobile": "/images/modules/sales/mobile/invoicing.jpg"
+          }
+        },
+        {
+          "id": "sales-reports",
+          "label": "Reportes de Ventas",
+          "icon": "trending-up",
+          "description": "Análisis detallado de tus ventas",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/reports.jpg",
+            "mobile": "/images/modules/sales/mobile/reports.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "purchases",
+      "label": "Compras y Proveedores",
+      "icon": "truck",
+      "description": "Gestión completa de compras y proveedores",
+      "images": {
+        "desktop": "/images/modules/purchases/desktop/dashboard.jpg",
+        "mobile": "/images/modules/purchases/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "suppliers",
+          "label": "Proveedores",
+          "icon": "users",
+          "description": "Administra tu base de proveedores",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/suppliers.jpg",
+            "mobile": "/images/modules/purchases/mobile/suppliers.jpg"
+          }
+        },
+        {
+          "id": "purchase-orders",
+          "label": "Órdenes de Compra",
+          "icon": "shopping-bag",
+          "description": "Crea y gestiona órdenes de compra",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/orders.jpg",
+            "mobile": "/images/modules/purchases/mobile/orders.jpg"
+          }
+        },
+        {
+          "id": "receiving",
+          "label": "Recepción",
+          "icon": "package-check",
+          "description": "Registra la recepción de mercadería",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/receiving.jpg",
+            "mobile": "/images/modules/purchases/mobile/receiving.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "integrations",
+      "label": "Integraciones",
+      "icon": "globe",
+      "description": "Conecta con plataformas externas",
+      "images": {
+        "desktop": "/images/modules/integrations/desktop/dashboard.jpg",
+        "mobile": "/images/modules/integrations/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "mercadolibre",
+          "label": "Mercado Libre",
+          "icon": "shopping-cart",
+          "description": "Sincroniza con tu tienda de Mercado Libre",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/mercadolibre.jpg",
+            "mobile": "/images/modules/integrations/mobile/mercadolibre.jpg"
+          }
+        },
+        {
+          "id": "ecommerce",
+          "label": "E-commerce",
+          "icon": "store",
+          "description": "Conecta con WooCommerce y Shopify",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/ecommerce.jpg",
+            "mobile": "/images/modules/integrations/mobile/ecommerce.jpg"
+          }
+        },
+        {
+          "id": "social-media",
+          "label": "Redes Sociales",
+          "icon": "share-2",
+          "description": "Vende a través de redes sociales",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/social-media.jpg",
+            "mobile": "/images/modules/integrations/mobile/social-media.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "label": "Reportes y Analítica",
+      "icon": "bar-chart-3",
+      "description": "Análisis completo de tu negocio",
+      "images": {
+        "desktop": "/images/modules/reports/desktop/dashboard.jpg",
+        "mobile": "/images/modules/reports/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "dashboard",
+          "label": "Dashboard Principal",
+          "icon": "layout-dashboard",
+          "description": "Vista general de tu negocio",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/dashboard.jpg",
+            "mobile": "/images/modules/reports/mobile/dashboard.jpg"
+          }
+        },
+        {
+          "id": "financial-reports",
+          "label": "Reportes Financieros",
+          "icon": "dollar-sign",
+          "description": "Análisis de rentabilidad y márgenes",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/financial.jpg",
+            "mobile": "/images/modules/reports/mobile/financial.jpg"
+          }
+        },
+        {
+          "id": "custom-reports",
+          "label": "Reportes Personalizados",
+          "icon": "file-bar-chart",
+          "description": "Crea reportes según tus necesidades",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/custom.jpg",
+            "mobile": "/images/modules/reports/mobile/custom.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "users",
+      "label": "Usuarios y Roles",
+      "icon": "users",
+      "description": "Administración de usuarios y permisos",
+      "images": {
+        "desktop": "/images/modules/users/desktop/dashboard.jpg",
+        "mobile": "/images/modules/users/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "user-management",
+          "label": "Gestión de Usuarios",
+          "icon": "user-plus",
+          "description": "Administra usuarios del sistema",
+          "images": {
+            "desktop": "/images/modules/users/desktop/management.jpg",
+            "mobile": "/images/modules/users/mobile/management.jpg"
+          }
+        },
+        {
+          "id": "roles-permissions",
+          "label": "Roles y Permisos",
+          "icon": "shield-check",
+          "description": "Define roles y permisos de acceso",
+          "images": {
+            "desktop": "/images/modules/users/desktop/roles.jpg",
+            "mobile": "/images/modules/users/mobile/roles.jpg"
+          }
+        },
+        {
+          "id": "audit-log",
+          "label": "Registro de Auditoría",
+          "icon": "file-search",
+          "description": "Historial de acciones de usuarios",
+          "images": {
+            "desktop": "/images/modules/users/desktop/audit.jpg",
+            "mobile": "/images/modules/users/mobile/audit.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}

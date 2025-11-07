@@ -34,7 +34,7 @@ export function Hero() {
 
             {/* Main heading */}
             <h1 className="mb-6 text-balance font-sans text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-              Controla tu negocio con{" "}
+              Gestioná todo tu negocio desde un solo lugar con{" "}
               <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                 Nexus
               </span>
@@ -42,8 +42,7 @@ export function Hero() {
 
             {/* Subheading */}
             <p className="mb-10 text-pretty text-lg text-muted-foreground sm:text-xl">
-              Sistema completo de gestión y control de stock. Desde ventas físicas hasta integración multicanal, todo en
-              una sola plataforma.
+              El software integral para administrar stock, ventas, proveedores y puntos de venta físicos o digitales.
             </p>
 
             {/* CTA Buttons */}
@@ -51,18 +50,18 @@ export function Hero() {
               <Button
                 size="lg"
                 className="group w-full sm:w-auto hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20comenzar%20con%20Nexus', '_blank')}
+                onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Comenzar ahora
+                Solicitar demo
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto bg-transparent hover:bg-primary/5 transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('https://wa.me/5491126678238?text=Hola,%20me%20gustaría%20ver%20una%20demo%20de%20Nexus', '_blank')}
+                onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Ver demo
+                Ver funcionalidades
               </Button>
             </div>
 
