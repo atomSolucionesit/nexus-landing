@@ -26,20 +26,24 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3 animate-fade-in">
+          <a 
+            href="/" 
+            aria-label="Nexus CRM - Inicio"
+            className="flex items-center gap-0.5 animate-fade-in"
+          >
             <div className="relative w-10 h-10 md:w-22 md:h-22 transition-transform hover:scale-110 duration-300">
               <Image
                 src="/images/logo-nexus.png"
-                alt="Nexus Logo"
+                alt="Logo de Nexus CRM - Software de Gestión Comercial Integral"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            <span className="text-xl md:text-3xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               NEXUS
             </span>
-          </div>
+          </a>
 
           {/* Buttons */}
           <div className="flex items-center gap-3 md:gap-4 animate-fade-in-delay">

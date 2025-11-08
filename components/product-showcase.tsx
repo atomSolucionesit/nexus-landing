@@ -57,7 +57,7 @@ export function ProductShowcase() {
               <div className="relative h-full w-full rounded-2xl overflow-hidden group-hover:scale-105 transition-all duration-500">
                 <Image
                   src="/images/pos-terminal-1.png"
-                  alt="Terminal POS Nexus mostrando formas de pago"
+                  alt="Terminal POS Nexus - Sistema de punto de venta mostrando múltiples formas de pago y gestión de ventas"
                   fill
                   className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                 />
@@ -70,7 +70,7 @@ export function ProductShowcase() {
               <div className="relative h-full w-full rounded-2xl overflow-hidden group-hover:scale-105 transition-all duration-500">
                 <Image
                   src="/images/pos-terminal-3.png"
-                  alt="Terminal POS Nexus vista lateral"
+                  alt="Terminal POS Nexus - Interfaz de punto de venta con diseño moderno y funcionalidades de gestión comercial"
                   fill
                   className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                 />
@@ -99,7 +99,7 @@ export function ProductShowcase() {
             <div className="relative rounded-3xl overflow-hidden backdrop-blur-sm group-hover:scale-105 transition-all duration-500">
               <Image
                 src="/images/mobile-screens.png"
-                alt="Aplicación móvil Nexus en diferentes pantallas"
+                alt="Aplicación móvil Nexus CRM - Gestión comercial desde smartphone con vistas de stock, ventas y reportes"
                 width={1200}
                 height={800}
                 className="w-full h-auto drop-shadow-2xl"
@@ -129,7 +129,7 @@ export function ProductShowcase() {
               <div className="relative h-full w-full rounded-2xl overflow-hidden group-hover:scale-105 transition-all duration-500">
                 <Image
                   src="/images/pos-terminal-2.png"
-                  alt="Terminales POS Nexus sincronizadas"
+                  alt="Terminales POS Nexus sincronizadas - Sistema multi-dispositivo con sincronización en tiempo real"
                   fill
                   className="object-contain p-6 group-hover:scale-110 transition-transform duration-700 drop-shadow-2xl"
                 />
@@ -142,7 +142,7 @@ export function ProductShowcase() {
               <div className="relative h-full w-full rounded-3xl overflow-hidden group-hover:scale-105 group-hover:rotate-2 transition-all duration-500">
                 <Image
                   src="/images/mobile-login.png"
-                  alt="Login móvil de Nexus"
+                  alt="Login móvil de Nexus CRM - Acceso seguro a la plataforma de gestión comercial desde dispositivos móviles"
                   fill
                   className="object-contain p-2 group-hover:scale-105 transition-transform duration-700 drop-shadow-2xl"
                 />

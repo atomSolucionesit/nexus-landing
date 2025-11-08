@@ -279,7 +279,7 @@ export function ModuleShowcase() {
                               </div> */}
                               <img
                                 src={selectedItem.images.desktop}
-                                alt="Dashboard"
+                                alt={`${selectedItem.label} - Vista desktop de ${selectedModule.label} en Nexus CRM`}
                                 className="object-contain w-full h-full"
                               />
                             </div>
@@ -289,15 +289,13 @@ export function ModuleShowcase() {
 
                       <TabsContent value="mobile">
                         <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-lg p-8 text-center">
-                          <div className="bg-white/50 rounded-lg p-8 border-2 border-dashed border-green-200 aspect-[9/16] max-w-sm mx-auto flex items-center justify-center">
-                            <div className="text-center">
-                              <Smartphone className="h-12 w-12 text-green-600 mx-auto mb-4" />
-                              <div className="text-green-600 font-medium">
-                                Vista Mobile
-                              </div>
-                              <div className="text-sm text-gray-500 mt-2">
-                                {selectedItem.images.mobile}
-                              </div>
+                          <div className="bg-white/50 rounded-lg p-2 border-2 border-dashed border-green-200 aspect-[9/16] max-w-sm mx-auto flex items-center justify-center">
+                            <div className="text-center w-full h-full">
+                              <img
+                                src={selectedItem.images.mobile}
+                                alt={`${selectedItem.label} - Vista móvil de ${selectedModule.label} en Nexus CRM`}
+                                className="object-contain w-full h-full"
+                              />
                             </div>
                           </div>
                         </div>
