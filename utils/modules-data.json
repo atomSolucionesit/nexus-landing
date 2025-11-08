@@ -21,16 +21,6 @@
           }
         },
         {
-          "id": "movements",
-          "label": "Movimientos",
-          "icon": "arrow-right-left",
-          "description": "Historial de entradas y salidas de stock",
-          "images": {
-            "desktop": "/images/modules/stock/desktop/movements.jpg",
-            "mobile": "/images/modules/stock/mobile/movements.jpg"
-          }
-        },
-        {
           "id": "alerts",
           "label": "Alertas de Stock",
           "icon": "alert-triangle",
