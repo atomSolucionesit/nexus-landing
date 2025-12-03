@@ -137,16 +137,6 @@
           }
         },
         {
-          "id": "ecommerce",
-          "label": "E-commerce",
-          "icon": "store",
-          "description": "Conecta con WooCommerce y Shopify",
-          "images": {
-            "desktop": "/images/modules/integrations/desktop/ecommerce.jpg",
-            "mobile": "/images/modules/integrations/mobile/ecommerce.jpg"
-          }
-        },
-        {
           "id": "social-media",
           "label": "Redes Sociales",
           "icon": "share-2",
@@ -228,16 +218,6 @@
           "images": {
             "desktop": "/images/modules/users/desktop/roles.jpg",
             "mobile": "/images/modules/users/mobile/roles.jpg"
-          }
-        },
-        {
-          "id": "audit-log",
-          "label": "Registro de Auditoría",
-          "icon": "file-search",
-          "description": "Historial de acciones de usuarios",
-          "images": {
-            "desktop": "/images/modules/users/desktop/audit.jpg",
-            "mobile": "/images/modules/users/mobile/audit.jpg"
           }
         }
       ]
