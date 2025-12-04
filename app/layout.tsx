@@ -164,9 +164,9 @@ export const metadata: Metadata = {
     // google: "google-site-verification-code",
     // yandex: "yandex-verification-code",
     // yahoo: "yahoo-site-verification-code",
-    // other: {
-    //   "facebook-domain-verification": "facebook-verification-code",
-    // },
+    other: {
+      "facebook-domain-verification": "tsvrfi8ba3du4vqhas9sv2cm9knd8o",
+    },
   },
 };
 
