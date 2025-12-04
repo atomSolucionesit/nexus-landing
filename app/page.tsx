@@ -6,6 +6,7 @@ import { ModuleShowcase } from "@/components/module-showcase";
 import { Integrations } from "@/components/integrations";
 import { Industries } from "@/components/industries";
 import { Testimonials } from "@/components/testimonials";
+import { Pricing } from "@/components/pricing";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Integrations />
       <Industries />
       <Testimonials />
+      <Pricing />
       <CTA />
       <Footer />
     </main>

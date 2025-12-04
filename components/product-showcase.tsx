@@ -36,7 +36,7 @@ export function ProductShowcase() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-32" ref={(el) => (sectionRefs.current["pos"] = el)}>
+        <div className="mb-32" ref={(el) => { sectionRefs.current["pos"] = el }}>
           <div
             className={`mx-auto max-w-2xl text-center mb-16 transition-all duration-1000 ${isVisible["pos"] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
@@ -79,7 +79,7 @@ export function ProductShowcase() {
           </div>
         </div>
 
-        <div className="mb-32" ref={(el) => (sectionRefs.current["mobile"] = el)}>
+        <div className="mb-32" ref={(el) => { sectionRefs.current["mobile"] = el }}>
           <div
             className={`mx-auto max-w-2xl text-center mb-16 transition-all duration-1000 ${isVisible["mobile"] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
@@ -108,7 +108,7 @@ export function ProductShowcase() {
           </div>
         </div>
 
-        <div ref={(el) => (sectionRefs.current["sync"] = el)}>
+        <div ref={(el) => { sectionRefs.current["sync"] = el }}>
           <div
             className={`mx-auto max-w-2xl text-center mb-16 transition-all duration-1000 ${isVisible["sync"] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
