@@ -3,7 +3,19 @@
 import { Package, ShoppingCart, Truck, Globe, BarChart3, Users } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-const features = [
+interface Feature {
+  title: string;
+  description: string;
+  icon?: any;
+}
+
+interface FeaturesProps {
+  title?: string;
+  description?: string;
+  features?: Feature[];
+}
+
+const defaultFeatures = [
   {
     icon: Package,
     title: "Gestión de stock",
@@ -34,11 +46,16 @@ const features = [
     title: "Usuarios y roles",
     description: "Control de acceso para equipos, sucursales y franquicias.",
   },
-]
+];
 
-export function Features() {
+function Features({
+  title = "Todo lo que tu negocio necesita",
+  description = "Módulos completos para gestionar cada aspecto de tu operación comercial desde una sola plataforma.",
+  features: customFeatures
+}: FeaturesProps = {}) {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
+  const features = customFeatures || defaultFeatures;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,10 +86,10 @@ export function Features() {
           className={`mx-auto max-w-2xl text-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            Todo lo que tu negocio necesita
+            {title}
           </h2>
           <p className="text-pretty text-lg text-muted-foreground">
-            Módulos completos para gestionar cada aspecto de tu operación comercial desde una sola plataforma.
+            {description}
           </p>
         </div>
 
@@ -90,7 +107,7 @@ export function Features() {
 
               <div className="relative z-10">
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-all duration-500 group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110 group-hover:rotate-6">
-                  <feature.icon className="h-6 w-6" />
+                  {feature.icon ? <feature.icon className="h-6 w-6" /> : <Package className="h-6 w-6" />}
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-card-foreground group-hover:text-primary transition-colors duration-300">
                   {feature.title}
@@ -104,3 +121,5 @@ export function Features() {
     </section>
   )
 }
+
+export default Features;

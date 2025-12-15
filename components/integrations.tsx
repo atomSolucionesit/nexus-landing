@@ -82,18 +82,18 @@ export function Integrations() {
 
   return (
     <section
-      className="bg-background py-20 lg:py-32 relative overflow-hidden"
+      className="bg-background py-12 sm:py-20 lg:py-32 relative overflow-hidden"
       ref={sectionRef}
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/4 top-1/4 h-[600px] w-[600px] rounded-full bg-accent/5 blur-3xl animate-pulse" />
-        <div className="absolute right-1/4 bottom-1/4 h-[500px] w-[500px] rounded-full bg-primary/5 blur-3xl animate-pulse delay-1000" />
+        <div className="absolute left-1/4 top-1/4 h-[300px] w-[300px] sm:h-[600px] sm:w-[600px] rounded-full bg-accent/5 blur-3xl animate-pulse" />
+        <div className="absolute right-1/4 bottom-1/4 h-[250px] w-[250px] sm:h-[500px] sm:w-[500px] rounded-full bg-primary/5 blur-3xl animate-pulse delay-1000" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div
-          className={`mx-auto max-w-3xl text-center mb-16 transition-all duration-1000 ${
+          className={`mx-auto max-w-3xl text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -101,10 +101,10 @@ export function Integrations() {
             <Link2 className="h-4 w-4" />
             Integraciones potentes
           </div>
-          <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
             Conecta con todas tus plataformas
           </h2>
-          <p className="text-pretty text-lg text-muted-foreground">
+          <p className="text-pretty text-base sm:text-lg text-muted-foreground">
             Nexus se integra perfectamente con las principales plataformas de
             e-commerce, pagos y redes sociales. Todo sincronizado en tiempo
             real, sin complicaciones.
@@ -112,11 +112,11 @@ export function Integrations() {
         </div>
 
         {/* Integrations Grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {integrations.map((integration, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-xl border border-border bg-card/50 backdrop-blur-sm p-6 transition-all duration-700 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 ${
+              className={`group relative overflow-hidden rounded-xl border border-border bg-card/50 backdrop-blur-sm p-4 sm:p-6 transition-all duration-700 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
@@ -131,22 +131,22 @@ export function Integrations() {
               {/* Content */}
               <div className="relative z-10">
                 {/* Icon and Category */}
-                <div className="mb-4 flex items-start justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-2xl transition-all duration-500 group-hover:bg-primary group-hover:scale-110 group-hover:rotate-6">
+                <div className="mb-3 sm:mb-4 flex items-start justify-between">
+                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg bg-primary/10 text-xl sm:text-2xl transition-all duration-500 group-hover:bg-primary group-hover:scale-110 group-hover:rotate-6">
                     {integration.icon}
                   </div>
-                  <span className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
+                  <span className="rounded-full bg-secondary px-2 sm:px-3 py-1 text-xs font-medium text-secondary-foreground">
                     {integration.category}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="mb-2 text-xl font-semibold text-card-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="mb-2 text-lg sm:text-xl font-semibold text-card-foreground group-hover:text-primary transition-colors duration-300">
                   {integration.name}
                 </h3>
 
                 {/* Description */}
-                <p className="text-pretty text-sm text-muted-foreground">
+                <p className="text-pretty text-sm text-muted-foreground leading-relaxed">
                   {integration.description}
                 </p>
 
@@ -177,18 +177,18 @@ export function Integrations() {
 
         {/* Bottom CTA */}
         <div
-          className={`mt-16 text-center transition-all duration-1000 delay-500 ${
+          className={`mt-8 sm:mt-12 lg:mt-16 text-center transition-all duration-1000 delay-500 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="mx-auto max-w-2xl rounded-2xl border border-border bg-gradient-to-br from-primary/5 to-accent/5 p-8 backdrop-blur-sm">
+          <div className="mx-auto max-w-2xl rounded-2xl border border-border bg-gradient-to-br from-primary/5 to-accent/5 p-6 sm:p-8 backdrop-blur-sm">
             <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
               <Zap className="h-6 w-6" />
             </div>
-            <h3 className="mb-2 text-2xl font-bold text-foreground">
+            <h3 className="mb-2 text-xl sm:text-2xl font-bold text-foreground">
               ¿Necesitas otra integración?
             </h3>
-            <p className="mb-6 text-muted-foreground">
+            <p className="mb-4 sm:mb-6 text-sm sm:text-base text-muted-foreground">
               Estamos constantemente agregando nuevas integraciones. Si tu
               plataforma no está en la lista, contáctanos y te ayudamos a
               conectarla.

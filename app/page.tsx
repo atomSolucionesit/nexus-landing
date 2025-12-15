@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar";
-import { Hero } from "@/components/hero";
+import Hero from "@/components/hero";
 import { About } from "@/components/about";
-import { Features } from "@/components/features";
+import Features from "@/components/features";
 import { ModuleShowcase } from "@/components/module-showcase";
 import { Integrations } from "@/components/integrations";
 import { Industries } from "@/components/industries";

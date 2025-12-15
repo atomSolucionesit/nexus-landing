@@ -5,7 +5,21 @@ import { ArrowRight, Zap } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
-export function Hero() {
+interface HeroProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  primaryCTA?: string;
+  secondaryCTA?: string;
+}
+
+function Hero({
+  title = "Gestioná todo tu negocio desde un solo lugar con Nexus",
+  subtitle,
+  description = "El software integral para administrar stock, ventas, proveedores y puntos de venta físicos o digitales.",
+  primaryCTA = "Solicitar demo",
+  secondaryCTA = "Ver funcionalidades"
+}: HeroProps = {}) {
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
@@ -34,15 +48,38 @@ export function Hero() {
 
             {/* Main heading */}
             <h1 className="mb-6 text-balance font-sans text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-              Gestioná todo tu negocio desde un solo lugar con{" "}
-              <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
-                Nexus
-              </span>
+              {title.includes('Nexus') ? (
+                title.split('Nexus').map((part, index) => (
+                  index === 0 ? (
+                    <span key={index}>{part}</span>
+                  ) : (
+                    <span key={index}>
+                      <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                        Nexus
+                      </span>
+                      {part}
+                    </span>
+                  )
+                ))
+              ) : (
+                <>
+                  {title}{" "}
+                  <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                    Nexus
+                  </span>
+                </>
+              )}
             </h1>
+            
+            {subtitle && (
+              <h2 className="mb-4 text-2xl font-semibold text-primary">
+                {subtitle}
+              </h2>
+            )}
 
             {/* Subheading */}
             <p className="mb-10 text-pretty text-lg text-muted-foreground sm:text-xl">
-              El software integral para administrar stock, ventas, proveedores y puntos de venta físicos o digitales.
+              {description}
             </p>
 
             {/* CTA Buttons */}
@@ -52,7 +89,7 @@ export function Hero() {
                 className="group w-full sm:w-auto hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
                 onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Solicitar demo
+                {primaryCTA}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button
@@ -61,7 +98,7 @@ export function Hero() {
                 className="w-full sm:w-auto bg-transparent hover:bg-primary/5 transition-all duration-300 hover:scale-105"
                 onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Ver funcionalidades
+                {secondaryCTA}
               </Button>
             </div>
 
@@ -109,3 +146,5 @@ export function Hero() {
     </section>
   )
 }
+
+export default Hero;
