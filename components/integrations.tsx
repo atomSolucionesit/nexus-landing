@@ -194,7 +194,7 @@ export function Integrations() {
               conectarla.
             </p>
             <a
-              href="https://wa.me/5491126678238?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20las%20integraciones%20de%20Nexus"
+              href="https://wa.me/543772430213?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20las%20integraciones%20de%20Nexus"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"

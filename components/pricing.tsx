@@ -137,9 +137,9 @@ export function Pricing() {
                 size="lg"
                 onClick={() => {
                   if (plan.price === "Consultar") {
-                    window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20el%20plan%20Pro%20de%20Nexus.%20Me%20gustaría%20recibir%20más%20información', '_blank')
+                    window.open('https://wa.me/543772430213?text=Hola,%20me%20interesa%20el%20plan%20Pro%20de%20Nexus.%20Me%20gustaría%20recibir%20más%20información', '_blank')
                   } else {
-                    window.open('https://wa.me/5491126678238?text=Hola,%20me%20interesa%20comenzar%20con%20el%20plan%20' + plan.name + '%20de%20Nexus.%20Me%20gustaría%20iniciar%20la%20prueba%20gratis%20de%2030%20días', '_blank')
+                    window.open('https://wa.me/543772430213?text=Hola,%20me%20interesa%20comenzar%20con%20el%20plan%20' + plan.name + '%20de%20Nexus.%20Me%20gustaría%20iniciar%20la%20prueba%20gratis%20de%2030%20días', '_blank')
                   }
                 }}
               >

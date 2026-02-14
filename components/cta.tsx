@@ -16,7 +16,7 @@ export function CTA() {
     // Simulate form submission
     setTimeout(() => {
       const message = `Hola, soy ${formData.name} (${formData.email}). Me gustaría solicitar una demo de Nexus.`
-      window.open(`https://wa.me/5491126678238?text=${encodeURIComponent(message)}`, '_blank')
+      window.open(`https://wa.me/543772430213?text=${encodeURIComponent(message)}`, '_blank')
       setIsSubmitting(false)
       setFormData({ name: '', email: '' })
     }, 1000)
