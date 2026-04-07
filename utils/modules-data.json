@@ -1,0 +1,460 @@
+{
+  "modules": [
+    {
+      "id": "stock",
+      "label": "Gestión de Stock",
+      "icon": "package",
+      "description": "Control completo de inventario en tiempo real",
+      "images": {
+        "desktop": "/images/modules/stock/desktop/dashboard.jpg",
+        "mobile": "/images/modules/stock/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "inventory",
+          "label": "Inventario",
+          "icon": "boxes",
+          "description": "Visualiza y gestiona todo tu inventario con SKU, stock y cotización en tiempo real",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/inventory.jpg",
+            "mobile": "/images/modules/stock/mobile/inventory.jpg"
+          }
+        },
+        {
+          "id": "alerts",
+          "label": "Alertas de Stock",
+          "icon": "alert-triangle",
+          "description": "Notificaciones automáticas de stock mínimo y máximo",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/alerts.jpg",
+            "mobile": "/images/modules/stock/mobile/alerts.jpg"
+          }
+        },
+        {
+          "id": "categories",
+          "label": "Gestión de Categorías",
+          "icon": "layout-dashboard",
+          "description": "Organizá tus productos en categorías y subcategorías",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/categories.jpg",
+            "mobile": "/images/modules/stock/mobile/categories.jpg"
+          }
+        },
+        {
+          "id": "promotions",
+          "label": "Promociones y Cupones",
+          "icon": "trending-up",
+          "description": "Creá combos de productos y cupones de descuento para tus clientes",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/promotions.jpg",
+            "mobile": "/images/modules/stock/mobile/promotions.jpg"
+          }
+        },
+        {
+          "id": "price-lists",
+          "label": "Listas de Precios",
+          "icon": "dollar-sign",
+          "description": "Definí listas mayoristas, minoristas o en dólares y asignalas por cliente",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/price-lists.jpg",
+            "mobile": "/images/modules/stock/mobile/price-lists.jpg"
+          }
+        },
+        {
+          "id": "warehouses",
+          "label": "Gestión de Almacenes",
+          "icon": "package-check",
+          "description": "Administrá múltiples almacenes y controlá el stock por ubicación",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/warehouses.jpg",
+            "mobile": "/images/modules/stock/mobile/warehouses.jpg"
+          }
+        },
+        {
+          "id": "catalog-online",
+          "label": "Catálogo Online",
+          "icon": "globe",
+          "description": "Publicá productos seleccionados en tu catálogo online y recibí pedidos directamente",
+          "images": {
+            "desktop": "/images/modules/stock/desktop/catalog-online.jpg",
+            "mobile": "/images/modules/stock/mobile/catalog-online.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "label": "Ventas y POS",
+      "icon": "shopping-cart",
+      "description": "Sistema de punto de venta completo con facturación AFIP",
+      "images": {
+        "desktop": "/images/modules/sales/desktop/dashboard.jpg",
+        "mobile": "/images/modules/sales/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "pos",
+          "label": "Punto de Venta",
+          "icon": "credit-card",
+          "description": "Vendé rápido con escáner, descuentos, múltiples métodos de pago y cuenta corriente",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/pos.jpg",
+            "mobile": "/images/modules/sales/mobile/pos.jpg"
+          }
+        },
+        {
+          "id": "invoicing",
+          "label": "Facturación AFIP",
+          "icon": "file-text",
+          "description": "Emití facturas A, B y C integradas con ARCA/AFIP desde el mismo sistema",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/invoicing.jpg",
+            "mobile": "/images/modules/sales/mobile/invoicing.jpg"
+          }
+        },
+        {
+          "id": "sales-reports",
+          "label": "Reportes de Ventas",
+          "icon": "file-bar-chart",
+          "description": "Análisis detallado por horario, método de pago, canal y productos más vendidos",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/reports.jpg",
+            "mobile": "/images/modules/sales/mobile/reports.jpg"
+          }
+        },
+        {
+          "id": "cash-registers",
+          "label": "Cajas Registradoras",
+          "icon": "dollar-sign",
+          "description": "Creá y gestioná cajas, asigná cajeros y controlá el cierre con detalle de efectivo",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/cash-registers.jpg",
+            "mobile": "/images/modules/sales/mobile/cash-registers.jpg"
+          }
+        },
+        {
+          "id": "workstations",
+          "label": "Estaciones de Trabajo",
+          "icon": "layout-dashboard",
+          "description": "Configurá puestos POS con caja y usuarios asignados para cada estación",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/workstations.jpg",
+            "mobile": "/images/modules/sales/mobile/workstations.jpg"
+          }
+        },
+        {
+          "id": "tables",
+          "label": "Gestión de Mesas",
+          "icon": "store",
+          "description": "Administrá mesas para bar o restaurante, asigná productos y cobrá por mesa",
+          "images": {
+            "desktop": "/images/modules/sales/desktop/tables.jpg",
+            "mobile": "/images/modules/sales/mobile/tables.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "purchases",
+      "label": "Compras y Proveedores",
+      "icon": "truck",
+      "description": "Gestión completa de compras, proveedores y gastos",
+      "images": {
+        "desktop": "/images/modules/purchases/desktop/dashboard.jpg",
+        "mobile": "/images/modules/purchases/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "suppliers",
+          "label": "Proveedores",
+          "icon": "users",
+          "description": "Creá y administrá tu lista de proveedores con datos de contacto y condiciones",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/suppliers.jpg",
+            "mobile": "/images/modules/purchases/mobile/suppliers.jpg"
+          }
+        },
+        {
+          "id": "purchase-orders",
+          "label": "Órdenes de Compra",
+          "icon": "shopping-bag",
+          "description": "Gestioná órdenes de compra con estados: pendiente, recibida y completada",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/orders.jpg",
+            "mobile": "/images/modules/purchases/mobile/orders.jpg"
+          }
+        },
+        {
+          "id": "receiving",
+          "label": "Recepción de Mercadería",
+          "icon": "package-check",
+          "description": "Registrá la recepción de mercadería y actualizá el stock automáticamente",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/receiving.jpg",
+            "mobile": "/images/modules/purchases/mobile/receiving.jpg"
+          }
+        },
+        {
+          "id": "expenses",
+          "label": "Gestión de Gastos",
+          "icon": "file-text",
+          "description": "Registrá y categorizá todos los gastos de tu empresa por sucursal",
+          "images": {
+            "desktop": "/images/modules/purchases/desktop/expenses.jpg",
+            "mobile": "/images/modules/purchases/mobile/expenses.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "customers",
+      "label": "Clientes y CRM",
+      "icon": "users",
+      "description": "Gestión de clientes, fidelización y cuenta corriente",
+      "images": {
+        "desktop": "/images/modules/customers/desktop/dashboard.jpg",
+        "mobile": "/images/modules/customers/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "customer-list",
+          "label": "Listado de Clientes",
+          "icon": "users",
+          "description": "Administrá todos tus clientes con DNI, contacto, tipo de cuenta y estado",
+          "images": {
+            "desktop": "/images/modules/customers/desktop/list.jpg",
+            "mobile": "/images/modules/customers/mobile/list.jpg"
+          }
+        },
+        {
+          "id": "club-amigos",
+          "label": "Club Amigos",
+          "icon": "trending-up",
+          "description": "Sistema de puntos por fidelización con descuentos según nivel del cliente",
+          "images": {
+            "desktop": "/images/modules/customers/desktop/club.jpg",
+            "mobile": "/images/modules/customers/mobile/club.jpg"
+          }
+        },
+        {
+          "id": "current-account",
+          "label": "Cuenta Corriente",
+          "icon": "dollar-sign",
+          "description": "Gestioná saldos, límites de crédito e historial de pagos por cliente",
+          "images": {
+            "desktop": "/images/modules/customers/desktop/account.jpg",
+            "mobile": "/images/modules/customers/mobile/account.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "orders",
+      "label": "Pedidos y Envíos",
+      "icon": "shopping-bag",
+      "description": "Control centralizado de pedidos de todos los canales",
+      "images": {
+        "desktop": "/images/modules/orders/desktop/dashboard.jpg",
+        "mobile": "/images/modules/orders/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "local-orders",
+          "label": "Pedidos Locales",
+          "icon": "store",
+          "description": "Visualizá y gestioná todos los pedidos realizados en tienda y catálogo online",
+          "images": {
+            "desktop": "/images/modules/orders/desktop/local.jpg",
+            "mobile": "/images/modules/orders/mobile/local.jpg"
+          }
+        },
+        {
+          "id": "ml-orders",
+          "label": "Pedidos Mercado Libre",
+          "icon": "shopping-cart",
+          "description": "Gestioná tus órdenes de MercadoLibre sincronizadas en tiempo real",
+          "images": {
+            "desktop": "/images/modules/orders/desktop/mercadolibre.jpg",
+            "mobile": "/images/modules/orders/mobile/mercadolibre.jpg"
+          }
+        },
+        {
+          "id": "ecommerce-orders",
+          "label": "Pedidos Ecommerce",
+          "icon": "globe",
+          "description": "Centralizá los pedidos de tu tienda online y catálogo en un solo lugar",
+          "images": {
+            "desktop": "/images/modules/orders/desktop/ecommerce.jpg",
+            "mobile": "/images/modules/orders/mobile/ecommerce.jpg"
+          }
+        },
+        {
+          "id": "shipping",
+          "label": "Estado de Envíos",
+          "icon": "truck",
+          "description": "Seguimiento de envíos por carrier con estados en tiempo real",
+          "images": {
+            "desktop": "/images/modules/orders/desktop/shipping.jpg",
+            "mobile": "/images/modules/orders/mobile/shipping.jpg"
+          }
+        },
+        {
+          "id": "carriers",
+          "label": "Transportistas",
+          "icon": "arrow-right-left",
+          "description": "Configurá tus carriers: OCA, Andreani o cualquier transportista propio",
+          "images": {
+            "desktop": "/images/modules/orders/desktop/carriers.jpg",
+            "mobile": "/images/modules/orders/mobile/carriers.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "integrations",
+      "label": "Integraciones",
+      "icon": "globe",
+      "description": "Conecta con las principales plataformas de venta y mensajería",
+      "images": {
+        "desktop": "/images/modules/integrations/desktop/dashboard.jpg",
+        "mobile": "/images/modules/integrations/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "mercadolibre",
+          "label": "Mercado Libre",
+          "icon": "shopping-cart",
+          "description": "Sincronizá publicaciones, stock y órdenes con tu cuenta de MercadoLibre",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/mercadolibre.jpg",
+            "mobile": "/images/modules/integrations/mobile/mercadolibre.jpg"
+          }
+        },
+        {
+          "id": "whatsapp",
+          "label": "WhatsApp Business",
+          "icon": "share-2",
+          "description": "Vendé por WhatsApp y sincronizá conversaciones con el CRM automáticamente",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/whatsapp.jpg",
+            "mobile": "/images/modules/integrations/mobile/whatsapp.jpg"
+          }
+        },
+        {
+          "id": "tiendanube",
+          "label": "Tienda Nube",
+          "icon": "store",
+          "description": "Sincronizá inventario y ventas con tu tienda online en tiempo real",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/tiendanube.jpg",
+            "mobile": "/images/modules/integrations/mobile/tiendanube.jpg"
+          }
+        },
+        {
+          "id": "social-media",
+          "label": "Redes Sociales",
+          "icon": "share-2",
+          "description": "Recibí mensajes de Instagram y Facebook Messenger directo en el sistema",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/social-media.jpg",
+            "mobile": "/images/modules/integrations/mobile/social-media.jpg"
+          }
+        },
+        {
+          "id": "mercadopago",
+          "label": "Mercado Pago",
+          "icon": "credit-card",
+          "description": "Procesá pagos online y offline de forma segura e integrada",
+          "images": {
+            "desktop": "/images/modules/integrations/desktop/mercadopago.jpg",
+            "mobile": "/images/modules/integrations/mobile/mercadopago.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "label": "Reportes y Analítica",
+      "icon": "bar-chart-3",
+      "description": "Análisis completo de ventas, productos y rendimiento del negocio",
+      "images": {
+        "desktop": "/images/modules/reports/desktop/dashboard.jpg",
+        "mobile": "/images/modules/reports/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "dashboard",
+          "label": "Dashboard Principal",
+          "icon": "layout-dashboard",
+          "description": "Vista general de tu negocio con métricas clave en tiempo real",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/dashboard.jpg",
+            "mobile": "/images/modules/reports/mobile/dashboard.jpg"
+          }
+        },
+        {
+          "id": "sales-analysis",
+          "label": "Análisis de Ventas",
+          "icon": "trending-up",
+          "description": "Ventas por horario, canal, método de pago y productos más vendidos",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/sales-analysis.jpg",
+            "mobile": "/images/modules/reports/mobile/sales-analysis.jpg"
+          }
+        },
+        {
+          "id": "financial-reports",
+          "label": "Reportes Financieros",
+          "icon": "dollar-sign",
+          "description": "Análisis de rentabilidad, márgenes y distribución efectivo vs digital",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/financial.jpg",
+            "mobile": "/images/modules/reports/mobile/financial.jpg"
+          }
+        },
+        {
+          "id": "custom-reports",
+          "label": "Reportes Personalizados",
+          "icon": "file-bar-chart",
+          "description": "Generá reportes a medida según las necesidades de tu negocio",
+          "images": {
+            "desktop": "/images/modules/reports/desktop/custom.jpg",
+            "mobile": "/images/modules/reports/mobile/custom.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "users",
+      "label": "Usuarios y Roles",
+      "icon": "shield-check",
+      "description": "Administración de usuarios, permisos y accesos por sucursal",
+      "images": {
+        "desktop": "/images/modules/users/desktop/dashboard.jpg",
+        "mobile": "/images/modules/users/mobile/dashboard.jpg"
+      },
+      "items": [
+        {
+          "id": "user-management",
+          "label": "Gestión de Usuarios",
+          "icon": "user-plus",
+          "description": "Creá usuarios y asignalos a sucursales, cajas y estaciones de trabajo",
+          "images": {
+            "desktop": "/images/modules/users/desktop/management.jpg",
+            "mobile": "/images/modules/users/mobile/management.jpg"
+          }
+        },
+        {
+          "id": "roles-permissions",
+          "label": "Roles y Permisos",
+          "icon": "shield-check",
+          "description": "Definí qué puede ver y hacer cada usuario dentro del sistema",
+          "images": {
+            "desktop": "/images/modules/users/desktop/roles.jpg",
+            "mobile": "/images/modules/users/mobile/roles.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}
