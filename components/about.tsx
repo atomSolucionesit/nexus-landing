@@ -11,9 +11,7 @@ export function About() {
             ¿Qué es Nexus?
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Nexus es una plataforma SaaS de gestión comercial integral. Centraliza todas tus
-            unidades de negocio en un solo panel: almacenes, catálogos, proveedores, ventas y
-            canales online.
+            Nexus conecta toda tu operación comercial en un solo lugar. Automatiza procesos, elimina errores operativos y te da visibilidad total sobre tu empresa — desde el pedido hasta el cobro, incluyendo logística, clientes y reportes en tiempo real.
           </p>
         </div>
 
@@ -22,21 +20,20 @@ export function About() {
             {
               step: "1",
               color: "bg-primary/10 text-primary",
-              title: "Conectá tus canales",
-              description: "Integra tu tienda física, tu ecommerce y tus redes sociales.",
+              title: "Unificá tu operación",
+              description: "Conecta depósitos, canales de venta, proveedores y clientes mayoristas en un flujo único y automatizado.",
             },
             {
               step: "2",
               color: "bg-accent/10 text-accent",
-              title: "Controlá tu stock",
-              description: "Actualización en tiempo real entre todos tus puntos de venta.",
+              title: "Eliminá errores operativos",
+              description: "Stock actualizado en tiempo real entre todos tus puntos. Sin desincronizaciones, sin pérdidas de pedidos.",
             },
             {
               step: "3",
               color: "bg-primary/10 text-primary",
-              title: "Vendé sin límites",
-              description:
-                "Gestioná pedidos, facturación y clientes desde una interfaz moderna y simple.",
+              title: "Escalá sin fricción",
+              description: "Gestioná mayor volumen de ventas, pedidos y clientes desde una interfaz moderna, sin sumar complejidad.",
             },
           ].map((item) => (
             <Card

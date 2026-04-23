@@ -19,56 +19,56 @@ const pillars = [
   {
     icon: ShoppingCart,
     label: "Vendé",
-    headline: "Vendé en todos los canales desde una sola pantalla",
+    headline: "Generá ventas sin fricción en todos los canales",
     color: "from-blue-500/10 to-cyan-500/10",
     borderHover: "hover:border-blue-500/40",
     iconBg: "bg-blue-500/10 text-blue-400 group-hover:bg-blue-500 group-hover:text-white",
     items: [
-      "POS con escáner de código de barras",
+      "Pedidos mayoristas y listas de precios",
+      "Gestión de ventas multi-canal",
+      "Catálogo compartible con clientes",
       "Integración con MercadoLibre",
-      "Catálogo público compartible",
-      "Gestión de mesas para gastronomía",
     ],
   },
   {
     icon: BarChart3,
     label: "Gestioná",
-    headline: "Siempre sabés cuánto tenés y cuánto ganás",
+    headline: "Control total de tu operación y stock multi-depósito",
     color: "from-violet-500/10 to-purple-500/10",
     borderHover: "hover:border-violet-500/40",
     iconBg: "bg-violet-500/10 text-violet-400 group-hover:bg-violet-500 group-hover:text-white",
     items: [
-      "Stock multi-sucursal en tiempo real",
+      "Stock multi-depósito en tiempo real",
       "Órdenes de compra a proveedores",
-      "Caja con apertura, cierre y reportes",
+      "Abastecimiento y reposición automática",
       "Control de gastos por categoría",
     ],
   },
   {
     icon: MessageSquare,
     label: "Conectá",
-    headline: "Respondé más rápido y convertí mensajes en ventas",
+    headline: "Centralizá consultas y convertílas en ventas",
     color: "from-emerald-500/10 to-teal-500/10",
     borderHover: "hover:border-emerald-500/40",
     iconBg: "bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white",
     items: [
-      "WhatsApp, Instagram y Facebook unificados",
-      "Templates y respuestas rápidas",
+      "Pedidos directos por WhatsApp",
+      "Canales de venta adicionales (Instagram, Facebook)",
       "Asignación de conversaciones a agentes",
     ],
   },
   {
     icon: Heart,
-    label: "Fidelizá",
-    headline: "Tus clientes vuelven solos",
+    label: "Retené",
+    headline: "Retené clientes mayoristas y maximizá su valor",
     color: "from-rose-500/10 to-pink-500/10",
     borderHover: "hover:border-rose-500/40",
     iconBg: "bg-rose-500/10 text-rose-400 group-hover:bg-rose-500 group-hover:text-white",
     items: [
-      "Club de puntos con niveles automáticos",
-      "QR de cliente para identificación en caja",
-      "Crédito y cuenta corriente",
-      "Historial completo por cliente",
+      "Cuenta corriente y crédito por cliente",
+      "Historial completo de compras",
+      "Gestión de clientes mayoristas",
+      "Análisis de rendimiento del negocio",
     ],
   },
 ];
@@ -93,7 +93,7 @@ function Features({ title, description, features: customFeatures }: FeaturesProp
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`mx-auto max-w-2xl text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              {title ?? "Todo lo que tu negocio necesita"}
+              {title ?? "Todo lo que tu operación necesita"}
             </h2>
             {description && (
               <p className="text-lg text-muted-foreground">{description}</p>
@@ -137,10 +137,10 @@ function Features({ title, description, features: customFeatures }: FeaturesProp
             Plataforma completa
           </p>
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            {title ?? "Todo lo que tu negocio necesita"}
+            {title ?? "Todo lo que tu operación necesita"}
           </h2>
           <p className="text-lg text-muted-foreground">
-            {description ?? "Cuatro pilares que cubren cada aspecto de tu operación comercial, desde una sola plataforma."}
+            {description ?? "Cada módulo está diseñado para resolver una parte crítica de tu operación. Juntos, cubren todo el flujo comercial de tu empresa."}
           </p>
         </div>
 

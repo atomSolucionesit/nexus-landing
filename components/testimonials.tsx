@@ -7,7 +7,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const testimonials = [
   {
     quote:
-      "Con Nexus pudimos centralizar ventas físicas y online. Hoy controlamos todo desde un solo panel y el stock nunca más se desincronizó.",
+      "Redujimos errores de stock en un 70% en los primeros 3 meses. Antes conciliábamos a mano entre depósitos, ahora todo es automático.",
     author: "Vicky",
     company: "Dibuy — Importadora",
     tag: "Importadora",
@@ -28,17 +28,17 @@ const testimonials = [
   },
   {
     quote:
-      "La integración con Mercado Libre nos ahorró horas de trabajo manual. Ahora el stock se actualiza automáticamente y vendemos más sin esfuerzo extra.",
+      "Pasamos de gestionar pedidos por WhatsApp a tener trazabilidad completa. Hoy sabemos exactamente qué se pidió, qué se entregó y qué se cobró.",
     author: "María González",
-    company: "Reservada",
-    tag: "MercadoLibre",
+    company: "Distribuidora Reservada",
+    tag: "Distribuidora",
   },
   {
     quote:
-      "Desde que usamos Nexus, nuestras ventas aumentaron y reducimos los errores de stock a casi cero. El reporte de ventas por horario nos cambió la operación.",
+      "Crecimos un 40% en volumen de ventas sin sumar personal administrativo. Nexus absorbió toda la operación extra sin fricciones.",
     author: "Carlos Rodríguez",
-    company: "Deportes Elite",
-    tag: "Retail",
+    company: "Deportes Elite — Mayorista",
+    tag: "Mayorista",
   },
 ];
 
@@ -73,8 +73,8 @@ export function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Historias de crecimiento con Nexus
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Conocé cómo otros negocios transformaron su gestión con nuestra plataforma
+          <p className="text-xl text-muted-foreground mb-6">
+            Conocé cómo otras empresas transformaron su operación con Nexus
           </p>
         </div>
 

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Zap } from "lucide-react"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { Particles } from "@/components/particles"
 
 interface HeroProps {
   title?: string;
@@ -14,11 +15,11 @@ interface HeroProps {
 }
 
 function Hero({
-  title = "Gestioná todo tu negocio desde un solo lugar con Nexus",
+  title = "Control total de tu operación de distribución",
   subtitle,
-  description = "El software integral para administrar stock, ventas, proveedores y puntos de venta físicos o digitales.",
+  description = "Stock, pedidos, logística, clientes y ventas mayoristas — todo sincronizado en tiempo real desde una sola plataforma.",
   primaryCTA = "Solicitar demo",
-  secondaryCTA = "Ver funcionalidades"
+  secondaryCTA = "Ver cómo funciona"
 }: HeroProps = {}) {
   const [scrollY, setScrollY] = useState(0)
 
@@ -30,6 +31,7 @@ function Hero({
 
   return (
     <section className="relative overflow-hidden bg-background">
+      <Particles />
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-[800px] w-[800px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl animate-pulse" />
         <div className="absolute right-0 top-1/4 h-[600px] w-[600px] rounded-full bg-accent/15 blur-3xl animate-pulse delay-1000" />
@@ -43,7 +45,7 @@ function Hero({
             {/* Badge */}
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm hover:bg-primary/10 transition-all duration-300 hover:scale-105">
               <Zap className="h-4 w-4 animate-pulse" />
-              Sistema de gestión inteligente
+              Gestioná tu distribuidora sin Excel ni planillas
             </div>
 
             {/* Main heading */}
@@ -63,10 +65,7 @@ function Hero({
                 ))
               ) : (
                 <>
-                  {title}{" "}
-                  <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
-                    Nexus
-                  </span>
+                  {title}
                 </>
               )}
             </h1>
@@ -96,7 +95,7 @@ function Hero({
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto bg-transparent hover:bg-primary/5 transition-all duration-300 hover:scale-105"
-                onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 {secondaryCTA}
               </Button>
@@ -120,9 +119,14 @@ function Hero({
                 <div className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">
                   +500
                 </div>
-                <div className="mt-1 text-sm text-muted-foreground">Clientes</div>
+                <div className="mt-1 text-sm text-muted-foreground">Empresas</div>
               </div>
             </div>
+
+            {/* Línea secundaria */}
+            <p className="mt-6 text-sm text-muted-foreground/70 italic">
+              Pensado para distribuidoras, mayoristas e importadoras.
+            </p>
           </div>
 
           <div className="relative lg:order-last animate-fade-in-right">

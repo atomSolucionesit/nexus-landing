@@ -6,24 +6,24 @@ import { FileSpreadsheet, Calculator, MessageCircleOff } from "lucide-react";
 const problems = [
   {
     icon: FileSpreadsheet,
-    title: "Tu stock en una planilla",
-    body: "Cada vez que vendés, actualizás a mano. Cada vez que comprás, rezás para no equivocarte. Y cuando hay diferencia, nadie sabe dónde se perdió.",
+    title: "Stock desincronizado entre depósitos",
+    body: "Vendés desde varios canales y depósitos, pero el stock no coincide. Terminás vendiendo productos que no tenés o frenando ventas por miedo a errores.",
     stat: "3h/día",
-    statLabel: "perdidas en carga manual",
+    statLabel: "perdidas en conciliación manual de stock",
   },
   {
     icon: Calculator,
-    title: "Tu caja en otro sistema",
-    body: "Fin del día: sumás tickets, comparás con el sistema, y siempre hay una diferencia que no encontrás. El cierre de caja se convierte en un problema.",
+    title: "Pedidos desordenados y sin trazabilidad",
+    body: "Los pedidos llegan por WhatsApp, teléfono y email. Sin un sistema centralizado, se pierden, se duplican o se entregan mal. Cada error cuesta plata y clientes.",
     stat: "1 de cada 3",
-    statLabel: "cierres de caja con error",
+    statLabel: "pedidos con algún error operativo",
   },
   {
     icon: MessageCircleOff,
-    title: "Tus ventas de WhatsApp, perdidas",
-    body: "Clientes que preguntan precio, vos respondés tarde, y la venta se va a otro lado. Cada mensaje sin responder es plata que se escapa.",
+    title: "Falta de control en cobros y cuentas corrientes",
+    body: "Clientes mayoristas con saldo pendiente, cobros sin registrar y cuentas corrientes que no cuadran. Sin visibilidad en tiempo real, el flujo de caja se vuelve impredecible.",
     stat: "67%",
-    statLabel: "de consultas sin respuesta a tiempo",
+    statLabel: "de empresas sin control real de cuentas corrientes",
   },
 ];
 
@@ -56,8 +56,11 @@ export function Problem() {
             ¿Te suena familiar?
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            El caos que frena tu negocio
+            El caos que frena tu operación
           </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Cuando tu operación crece, el desorden también.
+          </p>
         </div>
 
         {/* Cards */}
@@ -97,8 +100,8 @@ export function Problem() {
         {/* Cierre */}
         <div className={`mt-16 text-center transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
           <p className="text-xl font-semibold text-foreground sm:text-2xl">
-            Nexus lo resuelve todo.{" "}
-            <span className="text-gradient">En un solo lugar.</span>
+            Nexus organiza toda tu operación en un solo sistema.{" "}
+            <span className="text-gradient">Sin fricción.</span>
           </p>
         </div>
       </div>

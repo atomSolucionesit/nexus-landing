@@ -47,7 +47,7 @@ const integrations = [
     icon: (
       <Image src="/tiendanube.svg" alt="Tienda Nube" width={48} height={48} className="w-12 h-12 object-contain" />
     ),
-    available: false,
+    available: true,
   },
   {
     name: "Instagram",
@@ -121,10 +121,8 @@ export function Integrations() {
           <h2 className="mb-4 text-balance text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
             Conecta con todas tus plataformas
           </h2>
-          <p className="text-pretty text-base sm:text-lg text-muted-foreground">
-            Nexus se integra perfectamente con las principales plataformas de
-            e-commerce, pagos y redes sociales. Todo sincronizado en tiempo
-            real, sin complicaciones.
+          <p className="text-xl text-muted-foreground mb-6">
+            Integraciones que impactan directamente en tu operación diaria
           </p>
         </div>
 

@@ -112,6 +112,22 @@ export function SolutionsSection() {
             );
           })}
         </div>
+
+        {/* CTA rubro no listado */}
+        <div className="mt-10 text-center">
+          <p className="text-muted-foreground text-sm sm:text-base">
+            ¿No ves tu rubro?{" "}
+            <a
+              href="https://wa.me/543772430213?text=Hola,%20me%20interesa%20Nexus%20pero%20no%20veo%20mi%20rubro%20en%20la%20lista"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary hover:underline transition-colors"
+            >
+              Contáctanos
+            </a>
+            {" "}— nos encargamos de diseñar la solución para tu operación.
+          </p>
+        </div>
       </div>
     </section>
   );

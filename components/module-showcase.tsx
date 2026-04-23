@@ -96,7 +96,7 @@ export function ModuleShowcase() {
               Explorá los módulos de Nexus
             </h2>
             <p className="text-base sm:text-xl text-muted-foreground">
-              Descubrí cómo cada módulo puede transformar la gestión de tu negocio
+              Cada módulo está diseñado para resolver una parte crítica de tu operación. Juntos, forman un sistema completo para empresas que manejan volumen.
             </p>
           </div>
 
